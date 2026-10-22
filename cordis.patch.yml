@@ -1,0 +1,6 @@
+# web-annotate bundle patch: inserts the Host row that mounts the bundle.
+# All behaviour lives in the Client half (`./client`), which registers the
+# `web-annotate` right-Sidebar tab type and its body.
+- insert:
+    - id: web-annotate
+      name: 'dsh-plugin-web-annotate'

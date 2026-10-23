@@ -1,9 +1,8 @@
 {
   "name": "dsh-plugin-web-annotate",
   "version": "1.0.0",
-  "private": true,
-  "type": "module",
   "description": "Annotate elements on a page in the built-in browser and send the comments to the session in one click.",
+  "type": "module",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -18,6 +17,23 @@
     "icon.svg",
     "README.md"
   ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "browser",
+    "annotations",
+    "ui"
+  ],
+  "homepage": "https://github.com/uugvkbvkdjbsdbvwxxl/dsh-plugin-web-annotate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uugvkbvkdjbsdbvwxxl/dsh-plugin-web-annotate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uugvkbvkdjbsdbvwxxl/dsh-plugin-web-annotate/issues"
+  },
+  "license": "MIT",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

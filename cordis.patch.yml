@@ -3,4 +3,4 @@
 # `web-annotate` right-Sidebar tab type and its body.
 - insert:
     - id: web-annotate
-      name: 'dsh-plugin-web-annotate'
+      name: '@wxlaz/dsh-plugin-web-annotate'

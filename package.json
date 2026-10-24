@@ -1,5 +1,5 @@
 {
-  "name": "dsh-plugin-web-annotate",
+  "name": "@wxlaz/dsh-plugin-web-annotate",
   "version": "1.0.0",
   "description": "Annotate elements on a page in the built-in browser and send the comments to the session in one click.",
   "type": "module",

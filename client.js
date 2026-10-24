@@ -15,18 +15,18 @@
  * it, so a second, purpose-built tab keeps both packages honest.
  */
 window.__ModuleLoader__.load({
-  id: 'dsh-plugin-web-annotate',
+  id: '@wxlaz/dsh-plugin-web-annotate',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
 
     const NS = 'webAnnotate';
     const TAB_KIND = 'web-annotate';
-    const TAB_ID = 'dsh-plugin-web-annotate';
+    const TAB_ID = '@wxlaz/dsh-plugin-web-annotate';
     /** The shipped Browser kind this plugin's extension registration takes over. */
     const BROWSER_KIND = 'browser';
-    const TAKEOVER_ID = 'dsh-plugin-web-annotate/browser';
-    const CSS_TAG = 'dsh-plugin-web-annotate/client.css';
+    const TAKEOVER_ID = '@wxlaz/dsh-plugin-web-annotate/browser';
+    const CSS_TAG = '@wxlaz/dsh-plugin-web-annotate/client.css';
     const STORAGE_PREFIX = 'dsh.web-annotate.v1';
     const AGENT_KEY = '__DSH_ANNOTATE_AGENT__';
     const MAX_MARKS = 20;
@@ -392,7 +392,7 @@ window.__ModuleLoader__.load({
       if (typeof document === 'undefined') return () => {};
       if (document.querySelector('style[data-plugin-css=' + JSON.stringify(CSS_TAG) + ']') !== null) return () => {};
       const tag = document.createElement('style');
-      tag.dataset.plugin = 'dsh-plugin-web-annotate';
+      tag.dataset.plugin = '@wxlaz/dsh-plugin-web-annotate';
       tag.dataset.pluginCss = CSS_TAG;
       tag.textContent = CSS;
       document.head.appendChild(tag);
